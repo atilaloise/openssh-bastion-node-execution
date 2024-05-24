@@ -46,12 +46,6 @@ chmod 0600 $SSH_NODE_KEY_FILE
 SSHOPTS="-p $PORT -o LogLevel=ERROR -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $RD_CONFIG_SSH_OPTIONS"
 
 
-#if ssh-test is set to "true", do a dry run
-if [[ "true" == "$RD_CONFIG_DRY_RUN" ]] ; then
-    echo "[ssh-exec]" "$RUNSSH"
-    exit 0
-fi
-
 #clean keys and password
 unset RD_CONFIG_SSH_KEY_STORAGE_PATH
 unset RD_NODEEXECUTOR_SSH_KEY_STORAGE_PATH

@@ -3,11 +3,6 @@
 This plugin provides a node-executor and file-copier supporting ssh actions through a bastion host.
 Use this plugin if you must access remote servers via a jump host.
 
-## Dry run mode
-
-You can configure the plugin to just print the invocation string to the console.
-This can be useful when defining the configuration properties.
-
 ## Plugin Configuration Properties
 
 * Bastion SSH Key Storage Path: Identity to use for the bastion host connection.

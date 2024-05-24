@@ -73,11 +73,6 @@ providers:
           scope: Instance
           renderingOptions:
             instance-scope-node-attribute: "ssh-bastion-user"
-        - name: dry_run
-          title: 'Dry run?'
-          type: Boolean
-          required: false
-          description: 'Just echo what would be done'
     - name: openssh-bastion-copier
       service: FileCopier
       title: OpenSSH / Bastion host / File Copier
@@ -120,11 +115,6 @@ providers:
           scope: Instance
           renderingOptions:
             instance-scope-node-attribute: "scp-bastion-ssh-config"
-        - name: dry_run
-          title: 'Dry run?'
-          type: Boolean
-          required: false
-          description: 'Just echo what would be done'
         - name: bastion_host
           title: 'Default bastion host'
           type: String
